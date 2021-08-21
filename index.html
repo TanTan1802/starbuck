@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <title>Starbuck Website Landing Page</title>
+    <link rel='stylesheet'  href='style.css'>
+</head>
+<body>
+    <section>
+        <div class="circle">
+
+        </div>
+        <header>
+            <a href='#' ><img src="logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+                <p> Starbucks là thương hiệu coffee bậc nhất thế giới, sở hữu hơn 21.000 cửa hàng quanh 65 quốc gia, 
+                    đương nhiên trong đó có cả Starbucks Vietnam. Với sứ mệnh là một trong những công ty phát triển và 
+                    xây dựng thương hiệu nhanh nhất tại Mỹ thì Starbuck mỗi năm đã đóng góp không nhỏ vào sự phát triển kinh tế của khu vực.
+                    Chưa dừng lại ở đó, vẫn còn rất nhiều điều ẩn chứa đằng sau thương hiệu cafe này. </p>
+                    <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img1.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" onclick="imgSlider('img1.png');changeCircleColor('#017143')"></li> 
+            <li><img src="thumb2.png" onclick="imgSlider('img2.png');changeCircleColor('#eb7495')"></li> 
+            <li><img src="thumb3.png" onclick="imgSlider('img3.png');changeCircleColor('#d752b1')"></li>            
+        </ul>
+        <ul class="sci">
+            <li><a href="#"></a><img src="facebook.png" ></li>
+            <li><a href="#"></a><img src="instagram.png" ></li>
+            <li><a href="#"></a><img src="twitter.png" ></li>            
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src=anything;
+        }
+        function changeCircleColor(color){
+            const circle=document.querySelector('.circle');
+            circle.style.background=color;
+        }
+    </script>
+</body>
+</html>
